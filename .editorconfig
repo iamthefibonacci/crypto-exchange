@@ -1,0 +1,68 @@
+# Top-level configuration file
+root = true
+
+# Default configuration
+[*]
+indent_style = space
+indent_size = 2
+tab_width = indent_size
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+#   Limited editor support
+max_line_length = 80
+
+
+################### FILETYPE ###############################
+
+########## INI ##########
+
+[{*.ini, .editorconfig}]
+indent_size = 4
+
+
+########## JavaScript ##########
+
+[*.{js,jsdoc}]
+indent_size = 2
+
+
+########## JSON ##########
+
+[*.json]
+indent_size = 4
+
+
+########## Markdown ##########
+
+[*.md]
+indent_size = 4
+
+
+########## Python ##########
+
+[*.py]
+indent_size = 4
+
+
+########## YAML ##########
+
+[{*.{yml, yaml}, .eslintrc}]
+indent_size = 2
+
+
+################### SPECIAL FILES ##########################
+
+########## gitignore ##########
+
+[{.gitignore, .eslintignore}]
+indent_size = 2
+
+
+##### makefile #####
+
+[[Mm]akefile]
+indent_size = 4
+indent_style = tab
+
